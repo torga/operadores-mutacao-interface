@@ -1,24 +1,24 @@
 # Programa original
-def contador(i):
+def contar_valor(i):
+
     x = y = z = 0
 
     for x in range(i):
+
         y = y + 30
-        z = z / y 
-#        print(z)
+        z = z / y
 
     return z
 
-# contador(5)
 
 # Mutante 1
 def contador_mutant(i):
     x = y = z = 0
 
-    for x in range(x):
+    for x in range(IF_MUTA(x,i)):
         y = y + 30
         z = z / y 
-#        print(z)
+        print(z)
 
     return z
 
@@ -26,7 +26,7 @@ def contador_mutant(i):
 def contador_mutant(i):
     x = y = z = 0
 
-    for x in range(y):
+    for x in range(IF_MUTA(x,i)):
         y = y + 30
         z = z / y 
 #        print(z)
@@ -43,6 +43,3 @@ def contador_mutant(i):
 #        print(z)
 
     return z
-
-
-        
