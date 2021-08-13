@@ -9,6 +9,11 @@ def IF_MUTA(x,y):
     if __flg: return x 
     return y
 
+def DEVOLVE_VAR(y):
+    global x
+    x = y
+    return x
+
 def g(x,y):
     IF_MUTA(0.5,2)
 
